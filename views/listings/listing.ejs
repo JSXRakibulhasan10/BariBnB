@@ -1,0 +1,10 @@
+<% if (listings.length === 0) { %>
+    <p>No listings found for "<%= search %>"</p>
+<% } else { %>
+    <% listings.forEach(listing => { %>
+        <div>
+            <h3><%= listing.title %></h3>
+            <p><%= listing.location %></p>
+        </div>
+    <% }) %>
+<% } %>

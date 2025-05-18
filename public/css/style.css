@@ -1,0 +1,110 @@
+body{
+    font-family: "Plus Jakarta", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+  
+}
+
+.navbar {
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ff385c !important;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.footer a:hover {
+  color: #ff385c;
+  transition: color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* footer
+.f-info-links a {
+    color: #222222 !important;
+    text-decoration: none;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links, 
+.f-info-socials, .f-info-copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+} */
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+
+}
+
+.btns {
+    display: flex;
+
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+.listing-card {
+    border: none !important;
+}
+
+/*Flash message alined */
+.flash-container {
+    position: fixed;
+    top: 20px; /* Adjust this value to control vertical positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050; /* Ensure it appears above other elements */
+    width: 50%; /* Adjust width as needed */
+    text-align: center;
+  }

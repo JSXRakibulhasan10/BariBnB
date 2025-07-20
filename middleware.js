@@ -79,13 +79,13 @@ module.exports.isReviewAuthor = async (req, res, next) => {
     return res.redirect("/listings");
   }
 
-  // currUser না থাকলে redirect করবে — এটা বারবার reload এর কারণ হতে পারে
+  
   if (!res.locals.currUser) {
     req.flash("error", "You must be logged in!");
     return res.redirect("/login");
   }
 
-  // owner নেই বা match করে না
+  
   if (!review.author || !review.author.equals(res.locals.currUser._id)) {
     req.flash("error", "You don't have permission to delete this!");
     return res.redirect(`/listings/${id}`);

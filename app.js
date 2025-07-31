@@ -89,6 +89,19 @@ app.use((req, res, next) => {
   next();
 });
 
+//debugging
+
+app.use((req, res, next) => {
+    res.locals.success = req.flash("success");
+    res.locals.error = req.flash("error");
+    res.locals.currUser = req.user;
+    console.log("=== MIDDLEWARE DEBUG ===");
+    console.log("req.user:", req.user);
+    console.log("res.locals.currUser:", res.locals.currUser);
+    console.log("========================");
+    next();
+});
+
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
